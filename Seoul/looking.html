@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> 볼거리가 좋아 </title>
+    <meta charset="utf-8">
+    <style>
+      /* 글씨 왼쪽*/
+      .title-text {
+        text-align: left;
+      }
+      /* 글씨 중앙, 글씨 크게*/
+      .title-text2 {
+        text-align: center;
+        font-size: 30px;
+      }
+      /* 글씨 중앙, 글씨 작게*/
+      .text-center {
+        text-align: center;
+        font-size: 20px;
+      }
+      /* 글씨 중앙*/
+      .text-center2 {
+        text-align: center;
+      }
+      /* 음식 글꼴*/
+      .food {
+        text-align: right;
+        font-size: 15px;
+        margin-right: 150px;
+      }
+      /* 주요 사진*/
+      .picture {
+        width: 700px;
+        height: 500px;
+        float: left;
+      }
+      /* 음식 사진*/
+      .picture2 {
+        width: 150px;
+        height: 150px;
+      }
+      /* 화면 맨 아래창*/
+      .last-block {
+        background:#424242;
+        font-size: 10px;
+        color:white;
+        text-align: center;
+      }
+      /* 검색 아이콘*/
+      .icon {
+        float: right;
+        margin-right: 12px;
+      }
+      /* 화면 하단 로그인 아이콘 */
+      .icon2 {
+        float: center;
+        margin-right: 20px;
+      }
+
+    </style>
+    <script>
+      /* 창을 맨위로 올려주는 함수*/
+      function uppage(){
+        document.documentElement.scrollTop = 0;
+      }
+      /* 창을 맨아래로 내려주는 함수*/
+      function downpage(){
+        document.documentElement.scrollTop = document.documentElement.scrollHeight;
+      }
+      /* 검색창 출력창 함수 */
+      function serch() {
+        alert("검색되었습니다.");
+      }
+
+    </script>
+  </head>
+  <body>
+    <br>
+    <h1 class="text-center2"> 볼거리가 좋아 </h1><br><br><br>
+    <!--화면 왼쪽위 드롭다운-->
+    <select onchange="window.location.href=this.value">
+      <optgroup label= "서울이 좋아"> 
+        <option>카테고리</option>
+        <option value="walking.html">● 산책이 좋아  </option> 
+        <option value="looking.html">● 볼거리가 좋아  </option>
+        <option value="playing.html">● 노는게 좋아  </option>
+        <option value="hiking.html">● 산이 좋아  </option>
+        <option value="../Project1.html">● 메인으로</option>
+      </optgroup>
+    </select>
+    <select>
+      <optgroup label= "언어">
+        <option> 한국 / 한국어  </option> 
+        <option>● USA / English  </option>
+        <option>● UK / English </option>
+        <option>● 日本 / 日本語 </option>
+        <option>● 中国 / 中文  </option>
+        <option>● Italia / Italiano  </option>
+        <option>● البحرين / العربية  </option>
+        <option>● France / Français  </option>
+        <option>● Danmark / Dansk  </option>
+      </optgroup>
+    </select>
+    <!--화면을 맨 아래로 가게해주는 버튼-->
+    <button onclick="downpage()">맨 아래로 ↓</button>
+    <!--검색창-->
+    <table class="icon">
+      <tr>
+        <td><a href=" " onclick="serch()"><img 20px, 20px src=../icon/Serch.png height="30px"wdith="30px"></a></td>
+        <td><input class="icon" id="username" type="text" name="username"></td>
+      </tr>
+  </table>
+    <hr width = "100%" color = "black" size = "1"> 
+
+    <div><p class="title-text2">숭례문 (Sungnyemun)</p><br>
+    <img class="picture" src="https://i.pinimg.com/originals/39/c5/71/39c571820973b34649b922b507d2ed33.jpg">
+    <p class="text-center2"> 숭례문(崇禮門) 또는 서울 숭례문은 조선의 수도였던 한양의 4대문(大門) 중의 하나로 남쪽의 대문이다.<br> 
+      서울 4대문 및 보신각(普信閣)의 이름은 오행사상을 따라 지어졌는데, <br>
+      이런 명칭은 인(仁: 동), 의(義: 서), 례(禮: 남), 지(智: 북), 신(信: 중앙)의 5덕(五德)을 표현한 것이었으며, <br>
+      숭례문의 '례'는 여기서 유래한 것이다.<br><br>
+      
+      <p class="text-center2">Sungnyemun () or Seoul Sungnyemun is one of the four main gates of Hanyang, which was the capital of Joseon, and is the main gate of the south. <br>
+        The names of the four main gates and Bosingak () in Seoul were built along the Oh Pyeong-sang statue, <br>
+        This name was an expression of the five virtues (: dong), ui (: seo), rye (: nam), ji (: north), and god (: central), <br>
+        Sungnyemun's "Rye" comes from here.<br></p>
+    <p class="text-center"><a href ="http://naver.me/535BbD93" target='_blank'> 숭례문 가는 길</a> </p>
+
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 숭례문 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/added_restaurants/139201_1476437825174182.jpg ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/10391/1604891_1596793262095_19222 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/1014959_1591398749052182.jpg ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/27066_1547908908414092.jpg ">
+    <p class="food">
+      <a href ="https://m.place.naver.com/share?id=1869895905&tabsPath=%2Fhome&appMode=detail " target='_blank'>희락</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href ="http://naver.me/58HFHxTZ " target='_blank'> 진주집</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href ="http://naver.me/FOvhhVYw " target='_blank'> 퍼스트플로어</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" https://m.place.naver.com/share?id=1986337047&tabsPath=%2Fhome&appMode=detail" target='_blank'> 갓포하루</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br>
+
+
+    <div><p class="title-text2">코엑스 (COEX)</p><br>
+    <img class="picture" src="https://mblogthumb-phinf.pstatic.net/MjAyMDA2MjZfMjEg/MDAxNTkzMTUzNDIyMDkx.soMivMYjW_UnQtPUpsd5M8pS-t35cOBMDS0t2Oyfllsg.-9uJE4t_738wXTATBi72VrJKKTqdl_5jezpjRpJQ9WYg.JPEG.jhgeel/SE-2db51bce-86c9-4f29-9750-8c9151ed68ee.jpg?type=w800">
+    <p class="text-center2"> 코엑스(COEX, COnvention & EXhibition)는 대한민국 서울특별시 강남구에 있는<br> 
+      한국무역협회 소속의 사기업으로, 종합전시설과 코엑스몰을 운영·관리하고 있다. <br>
+      원래 명칭은 KOEX였으나 1998년에 명칭을 COEX로 변경하였다.<br><br></p>
+       <p class="text-center2">COEX (COEX, CONVENTION & EXHIBITION) is a private company belonging <br>
+         to the Korea International Trade Association in Gangnam-gu, Seoul, Korea.<br>
+        It operates and manages the comprehensive exhibition facility and COEX Mall.<br>
+        The original name was KOEX, but in 1998 the name was changed to COEX.
+        <br><br></p>
+    <p class="text-center"><a href ="http://naver.me/x6PAuQQH" target='_blank'> 코엑스 가는 길</a> </p>
+
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 코엑스 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/188626/458314_1621866439282_10916">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/268356/513834_1475590237324_1000 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/1192464_1622373302575305.jpg ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/283524/20793_1489716081637_207176 ">
+    <p class="food">
+      <a href ="https://m.place.naver.com/share?id=12002711&tabsPath=%2Fhome&appMode=detail " target='_blank'> 하동관</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href ="http://naver.me/GAi6Ngpx " target='_blank'> 히머스키친</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href ="http://naver.me/GSiUBjCA " target='_blank'> 딤딤섬</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href ="http://naver.me/xyUjlhhW " target='_blank'> 폴리스</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br>
+
+
+    <div><p class="title-text2">국립중앙박물관 (The National Museum of Korea)</p><br>
+    <img class="picture" src="https://korean.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=29667&fileTy=MEDIA&fileNo=1&thumbTy=L">
+    <p class="text-center2"> <br>국립중앙박물관(國立中央博物館)은 대한민국 서울특별시 용산구 서빙고로 137번지에 위치한 국립박물관이다.<br>
+       1972년 7월 19일 발족하였으며, 현재의 박물관은 2005년 10월 28일 신축 개관한 것이다.<br><br></p>
+    <p class="text-center2">The National Museum of Korea is a national museum located at 137 Serving Road, Yongsan-gu, Seoul, Korea.<br>
+      It was launched on July 19, 1972, <br>and the current museum was newly opened on October 28, 2005.<br><br></p>
+    <p class="text-center"><a href ="http://naver.me/5eGTvcXC" target='_blank'>국립중앙박물관 가는 길</a> </p><br>
+
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 국립중앙박물관 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/942_1420365875156 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/1757052_1621248789807256.jpg ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/355464/505666_1583113305965_21092 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/1272306_1606316793302687.jpg ">
+    <p class="food">
+      <a href =" " target='_blank'> 스즈란테이</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 잭슨피자</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 더 아래</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 사누끼</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br>
+
+
+    <div><p class="title-text2">용산전쟁기념관 (THE WAR MEMORIAL OF KOREA)</p><br>
+    <img class="picture" src="https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory2&fname=http%3A%2F%2Fcfile5.uf.tistory.com%2Fimage%2F250F9C35594C9FC31B9C5A">
+    <p class="text-center2"> 전쟁기념관은 옥내전시와 옥외전시로 구분되어 있으며 3만 3천여 점의 소장유물 중 1만여 점을 전시하고 있다.<br>
+       1만 900여 평의 옥내전시실은 호국추모실, 전쟁역사실, 6·25전쟁실, 해외파병실, 국군발전실, 대형장비실 등<br>
+        6개 전시실로 구성되어 있으며 대형무기들이 전시되어 있는 옥외전시실이 있다.<br><br></p>
+    <p class="text-center2">The War Memorial Hall is divided into an indoor exhibition and an outdoor exhibition, <br>
+      and displays about 10,000 of the 33,000 collections.<br>
+      The indoor exhibition room of 10,900 pyeong is the memorial room of the patriotic country, the war history room, <br>
+      the 6/25 war room, the overseas dispatch room, the Armed Forces Development room,<br>
+      It consists of six exhibition rooms and has an outdoor exhibition room with large weapons on display.
+      <br></p>
+    <p class="text-center"><a href ="http://naver.me/5PS2bSN8" target='_blank'>용산전쟁기념관 가는 길</a> </p>
+
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 용산전쟁기념관 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/377662/1274051_1622031978410_56691 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/337933/728744_1610875743177_196373 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/1911203_1619072185063681.jpg ">&nbsp;
+    <img class="picture2" src = " https://mp-seoul-image-production-s3.mangoplate.com/435088/201978_1622028059422_25622">
+    <p class="food">
+      <a href =" " target='_blank'> 몽탄</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 용산양꼬치</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 효뜨</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 물고기주택</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br>
+
+
+    <div><p class="title-text2">서울대공원 동물원 (Seoul Zoological Garden)</p><br>
+    <img class="picture" src="https://t1.daumcdn.net/cfile/blog/123ABE4B4E2B822717">
+    <p class="text-center2"> 
+       창경원의 건물 일부가 철거되는 대신 일본식 정원, 동물원, 식물원, 벛꽃거리 등이 들어서면서 서울시민들의 휴양지로 각광받다가<br>
+        고궁 복원을 위해 1977년 2월, ‘남서울대공원’의 명칭으로 대규모의 공원을 조성하여<br>
+         창경원의 동물을 옮기는 계획이 발표되었다.<br><br>
+           </p>
+    <p class="text-center2">
+      Instead of demolishing some of the buildings in Changgyeongwon, Japanese gardens, zoos, botanical <br>gardens, 
+      and flower streets are attracting attention as resorts for Seoul citizens.<br>
+      In February 1977, a large-scale park was created under the name of 'Namseoul Grand Park' to restore the old palace.
+      Plans for the transfer of animals by Chang Gyeong-won have been announced.<br><br>
+      </p>
+    <p class="text-center"><a href ="http://naver.me/5tjJZ1GD" target='_blank'>서울대공원 동물원 가는 길</a> </p>  
+
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 서울대공원 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/97204/37550_1456884151529_7977 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/12635/1066821_1604667996827_37881 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/330360/1116008_1542036620040_1958 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/390044/583794_1559483594404_28153 ">
+    <p class="food">
+      <a href =" " target='_blank'>봉덕칼국수</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>라운지디</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>마리아정 레시피</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>초당순두부</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br>
+
+
+    <div><p class="title-text2">예술의 전당 (Seoul Arts Center)</p><br>
+    <img class="picture" src="https://obj-sg.thewiki.kr/data/6174746163686d656e742fec9888ec88a0ec9d9820eca084eb8bb92f6578616d706c65332e6a7067.jpg">
+    <p class="text-center2"> 각 공연장과 미술관 사이에 음악 광장과 미술 광장, 계단 광장으로 이름 붙여진 야외 공간이 마련되어 있으며, <br>
+      2002년에는 오페라 하우스와 서예관 사이의 공간에 세계 음악 분수가 만들어져 관람객들의 <br>휴식처 역할을 하고 있다.
+       분수 옆에는 짧은 등산로가 있어서 등산객들이 이용하기도 한다.<br><br></p>
+    <p class="text-center2"> There is an outdoor space named Music Square, Art Square, and Stair Square between each performance hall and the museum.<br>
+      In 2002, a world music fountain was created in the space between the opera house and the calligraphy hall, serving as a resting place for visitors.<br>
+      There is a short trail next to the fountain, so hikers use it.<br><br></p>
+    <p class="text-center"><a href ="http://naver.me/5L3oi9NW" target='_blank'>예술의 전당 가는 길</a> </p>  
+
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 예술의 전당 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/415676/923979_1597451518946_42091 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/1187/293292_1456207505872_21387 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/379393/43178_1579794819998_19345 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/379727/1084364_1616549600831_7803 ">
+    <p class="food">
+      <a href =" " target='_blank'> 메종조</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>봉산옥</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 백년옥</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 피제리아호키포키</a>&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br>
+
+
+    <div><p class="title-text2">현충원 (Hyeonchungwon)</p><br>
+    <img class="picture" src="https://mediahub.seoul.go.kr/wp-content/uploads/editor/images/000328/%ED%81%AC%EA%B8%B0%EB%B3%80%ED%99%98_-4%ED%81%AC%EA%B8%B0%EB%B3%80%ED%99%98_-420200607_124434.jpg">
+    <p class="text-center2"> 1954년 3월 1일 착공하였으며, 1955년 7월 15일에는 국군묘지관리소가 발족하고 <br>
+      1956년 4월 13일 대통령령으로 군묘지령이 제정되어 안장이 이루어지게 되었다.<br><br>
+      국가원수, 애국지사, 순국선열 등 국가의 발전을 위해 명예로운 일들을 한 사람들과 나라를 위해 <br>
+      목숨을 바친 장병들을 기리는 장소로 서울시 뿐만 아니라 국가적 차원으로 보전 필요성이 높기에 <br>
+      2013년 ‘서울 미래유산’으로 등재됐다. <br><br> </p>
+    <p class="text-center2">The construction began on March 1, 1954, and on July 15, 1955, the Armed Forces Cemetery Office was established<br>
+      On April 13, 1956, the Presidential Decree enacted the military cemetery and the saddle was made.<br><br>
+      For those who have done honorable things for the development of the nation, such as the head of state, patriotic governor,<br>
+      It is a place to honor the soldiers who devoted their lives. It is highly necessary to preserve not only Seoul but also the national level.<br>
+      It was listed as a Seoul Future Heritage in 2013.<br><br> </p>
+    <p class="text-center"><a href ="http://naver.me/Goz5Akxi" target='_blank'>현충원 가는 길</a> </p>  <br><br><br><br><br><br>
+    <!--화면 하단 회색 줄-->
+    <hr width = "100%" color = "gray" size = "1"> <br><br>
+
+    <p class="text-center"> 
+    <a href="walking.html">산책이 좋아</a>&nbsp;&nbsp;
+    <a href="playing.html">노는게 좋아</a>&nbsp;&nbsp;
+    <a href="hiking.html">산이 좋아</a>&nbsp;&nbsp;
+    <a href="../Project1.html">메인으로 돌아가기</a> &nbsp;&nbsp;&nbsp;&nbsp;
+    <!--화면을 맨 위로 가게해주는 버튼-->
+    <button onclick="uppage()">맨 위로 ↑</button>
+    </p>
+    <br>
+    <!--화면 하단-->
+    <div class="last-block">
+      <p><br><br><br><br>
+        <h1 class="last-center">
+          <h2 class="text-center">Subscriptions</h2><br><br>
+            Subscribe<br><br>
+            Customer Service<br><br>
+            Renew Subscription<br><br>
+            Give a Gift<br><br>
+            Change Address<br><br><br><br><br><br>
+          
+          AD<br><br>
+          Our website, archdigest.com, offers constant original coverage of the<br>
+          interior design and architecture worlds, new shops and products, travel<br>
+          destinations, art and cultural events, celebrity style, and high-end real<br>
+          estate as well as access to print features and images from the AD archives.</h1>
+          <br><br><br><br><br><br>
+          <div>
+            <!--화면 하단 로그인 아이콘 창-->
+           <a href="https://www.kakaocorp.com/page/service/service/KakaoTalk"><img class="icon2" src=../icon/KakaoTalk.jpg height="30px"wdith="30px"></a>           
+           <a href="https://m.facebook.com/?locale2=ko_KR "><img class="icon2" src=../icon/Facebook.png height="30px"wdith="30px"></a>          
+           <a href="https://www.instagram.com/"><img class="icon2" src=../icon/Instagram.png height="30px"wdith="30px"></a>
+           <a href="https://www.youtube.com/"><img class="icon2" src=../icon/YouTube.png height="30px"wdith="30px"></a>
+           <a href="https://twitter.com/?lang=ko "><img class="icon2" src=../icon/Twitter.png height="30px"wdith="30px"></a>
+           <a href="https://www.tumblr.com/"><img class="icon2" src=../icon/Tumbler.png height="30px"wdith="30px"></a>
+           </div>
+           <br><br>
+        <hr width = "100%" color = "white" size = "1">
+        <br><br><br><br><br>
+        © 2021 Condé Nast. All rights reserved. Use of this site constitutes acceptance of our User Agreement and Privacy Policy and Cookie Statement and Your California Privacy Rights. Architectural Digest may earn a portion of sales <br>
+        from products that are purchased through our site as part of our Affiliate Partnerships with retailers. The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of Condé Nast. Ad Choices
+
+
+      <br><br><br><br></p>
+
+
+    </div>
+  </body>
+</html>

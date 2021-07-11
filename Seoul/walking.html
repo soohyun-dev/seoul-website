@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> 산책이 좋아 </title>
+    <meta charset="utf-8">
+    <style>
+      /* 글씨 왼쪽*/
+      .title-text {
+        text-align: left;
+      }
+      /* 글씨 중앙, 글씨 크게*/
+      .title-text2 {
+        text-align: center;
+        font-size: 30px;
+      }
+      /* 글씨 중앙, 글씨 작게*/
+      .text-center {
+        text-align: center;
+        font-size: 20px;
+      }
+      /* 글씨 중앙*/
+      .text-center2 {
+        text-align: center;
+      }
+      /* 맛집 글꼴*/
+      .food {
+        text-align: right;
+        font-size: 15px;
+        margin-right: 150px;
+      }
+      /* 주요 사진*/
+      .picture {
+        width: 700px;
+        height: 550px;
+        float: left;
+      }
+      /* 음식 사진*/
+      .picture2 {
+        width: 150px;
+        height: 150px;
+      }
+      /* 화단 맨 아래창*/
+      .last-block {
+        background:#424242;
+        font-size: 10px;
+        color:white;
+        text-align: center;
+      }
+      /* 검색 아이콘*/
+      .icon {
+        float: right;
+        margin-right: 12px;
+      }
+      /* 화면 하단 로그인 아이콘 */
+      .icon2 {
+        float: center;
+        margin-right: 20px;
+      }
+
+    </style>
+    <script>
+      /* 창을 맨위로 올려주는 함수*/
+      function uppage(){
+        document.documentElement.scrollTop = 0;
+      }
+      /* 창을 맨아래로 내려주는 함수*/
+      function downpage(){
+        document.documentElement.scrollTop = document.documentElement.scrollHeight;
+      }
+      /* 검색창 출력창 함수 */
+      function serch() {
+        alert("검색되었습니다.");
+      }
+    </script>
+    
+  </head>
+  <body>
+    <br>
+    <h1 class="text-center2"> 산책이 좋아 </h1><br><br><br>
+    <!--화면 왼쪽위 드롭다운 -->
+    <select onchange="window.location.href=this.value">
+      <optgroup label= "서울이 좋아"> 
+        <option>카테고리</option>
+        <option value="walking.html">● 산책이 좋아  </option> 
+        <option value="looking.html">● 볼거리가 좋아  </option>
+        <option value="playing.html">● 노는게 좋아  </option>
+        <option value="hiking.html">● 산이 좋아  </option>
+        <option value="../Project1.html">● 메인으로</option>
+     </optgroup>
+    </select>
+    <select>
+      <optgroup label= "언어">
+        <option> 한국 / 한국어  </option> 
+        <option>● USA / English  </option>
+        <option>● UK / English </option>
+        <option>● 日本 / 日本語 </option>
+        <option>● 中国 / 中文  </option>
+        <option>● Italia / Italiano  </option>
+        <option>● البحرين / العربية  </option>
+        <option>● France / Français  </option>
+        <option>● Danmark / Dansk  </option>
+      </optgroup>
+    </select>
+    <!--화면을 맨 아래로 가게해주는 버튼-->
+    <button onclick="downpage()">맨 아래로 ↓</button>
+    <!--검색창-->
+    <table class="icon">
+      <tr>
+          <td><a href=" " onclick="serch()"><img 20px, 20px src=../icon/Serch.png height="30px"wdith="30px"></a></td>
+          <td><input class="icon" id="username" type="text" name="username"></td>
+      </tr>
+  </table>
+    <hr width = "100%" color = "black" size = "1"> 
+
+    <div><p class="title-text2">월드컵공원 (World Cup Park)</p><br>
+    <img class="picture" src="http://www.hanion.co.kr/news/photo/201601/2320_6133_430.jpg">
+    <p class="text-center2">월드컵 공원(영어: World Cup Park)은 서울특별시 마포구 상암동과 성산동 일원에 <br>
+      2002년 FIFA 월드컵을 기념하여 조성된 공원이다. <br><br>
+      한강변의 쓰레기 매립장이었던 난지도 쓰레기 매집장이 폐쇄된 자리와 그 주변에 조성하였으며, <br>
+      평화의 공원, 하늘공원, 노을공원, 난지천공원, 난지한강공원 등 5개의 공원으로 이루어져 있다.<br><br></p>
+    <p class="text-center2">World Cup Park (English: World Cup Park) is located in Sangam-dong and Seongsan-dong, Mapo-gu, Seoul<br>
+      It is a park built in commemoration of the 2002 FIFA World Cup.<br><br>
+      Nanjido garbage landfill, which was a landfill on the Han River, was built around the closed site,<br>
+      It consists of five parks: Peace Park, Sky Park, Noh Park, Nanji Stream Park, and Nanji Han River Park.<br><br></p>
+    <p class="text-center"><a href ="http://naver.me/xIh2Mqa7" target='_blank'>월드컵공원 가는 길</a> </p>  
+
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 월드컵공원 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/610188_1605181933581894.jpg ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/21015_1496393429425221.jpg ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/463989_1619961660189064.jpg ">&nbsp;
+    <img class="picture2" src = " https://mp-seoul-image-production-s3.mangoplate.com/355639/1059167_1583253529864_49852">
+    <p class="food">
+      <a href ="http://naver.me/xuICIdxV" target='_blank'>모리타</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href ="https://m.place.naver.com/share?id=662944975&tabsPath=%2Fhome&appMode=detail " target='_blank'> 오늘의 위로</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href ="http://naver.me/F6mxzIMJ " target='_blank'> 일등식당</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href ="http://naver.me/xv0L1emw " target='_blank'> 꼬르소산도</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br><br>
+
+    <div><p class="title-text2">망원한강공원 (Mangwon Hangang Park)</p><br>
+    <img class="picture" src="https://post-phinf.pstatic.net/MjAyMDAzMTdfMTU5/MDAxNTg0NDM3Njc3MjY0.E8t8v5DV5BDTLyjsWmm1bFI1Gtiy9sCLy39qA4ZAqScg.917tErxw_h20edl4r2yU7odWq8oY7tmg90MMU6XTQk8g.JPEG/%EB%A9%94%EC%9D%B8%EC%9D%B4%EB%AF%B8%EC%A7%80_01.jpg?type=w1200">
+    <p class="text-center2"><br>망원동에서 갈 수 있는 망원한강공원이다. <br>
+    퇴역한 함정이 전시되어있는 함상공원도 위치해 있으며, 피크닉을 즐기수 있을 넓은 부지들이 있다.<br><br>
+    여기서 조금만 더 걸으면 홍제천으로 이어지는 길로 걸어갈 수 있어. 산책하기도 좋은 곳이다.<br><br></p>
+    <p class="text-center2">It is a telephoto Han River park that can be reached from Telephoto-dong.<br>
+      Hamsang Park, where the retired vessels are displayed, is also located, and there are large sites to enjoy picnics.<br><br>
+      If you walk a little longer, you can walk down the road to Hongjecheon. It is a good place to walk.<br><br></p>
+    <p class="text-center"><a href ="http://naver.me/xZDOpRx3" target='_blank'>망원한강공원 가는 길</a> </p>  
+    
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 망원한강공원 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = " https://mp-seoul-image-production-s3.mangoplate.com/429888/1960542_1622374328532_53666">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/316690/qjwdjy72_brz5n.jpg ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/848311_1611132553157591.jpg ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/71939_1618237035745780.jpg ">
+    <p class="food">
+      <a href ="http://naver.me/xH2nzmuj " target='_blank'> 라멘집아저씨</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href ="http://naver.me/5VeAA9Uh " target='_blank'> 프롬하노이</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href ="http://naver.me/G14Fw0E9 " target='_blank'> 뭄미</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href ="https://m.place.naver.com/share?id=37350302&tabsPath=%2Fhome&appMode=detail " target='_blank'> 미자카야</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br><br>
+
+    <div><p class="title-text2">연트럴파크 (Yeontral Park)</p><br>
+    <img class="picture" src="https://cdn.thescoop.co.kr/news/photo/201909/36658_48383_542.jpg">
+    <p class="text-center2"><br>연남동에 위치한 연트럴파크이다. <br>
+    경의선숲길을 따라 이루어져 있으며, 주변에 맛집과 카페들이 많고, 산책하기도 좋은 곳이다. <br><br>
+    거리에서 버스킹도 하고, 애완견 산책도 많이 하는 모습을 볼 수 있어. 데이트코스로 딱 좋다.<br></p>
+    <p class="text-center2">It is a Yeontral Park located in Yeonnam-dong.<br>
+      It is made up of the Gyeongui Line Forest Road, and there are many restaurants and cafes around it, and it is a good place to walk.<br>
+      You can see busking on the street, and a lot of dog walks. It's perfect for a date course.<br><br></p>
+    <p class="text-center"><a href ="http://naver.me/IIqfqzJa" target='_blank'>연트럴파크 가는 길</a> </p> <br>
+
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 연트럴파크 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/467354_1518934950804567.jpg ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/440770/553783_1620019331929_23680 ">&nbsp;
+    <img class="picture2" src = " https://mp-seoul-image-production-s3.mangoplate.com/1338625_1597918517692430.jpg">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/47964/980232_1543501206685_18146 ">
+    <p class="food">
+      <a href =" " target='_blank'> 중화복춘</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 우동가조쿠</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 헬로인디아</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 더다이닝랩 </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br><br>
+
+    <div><p class="title-text2">광화문 (Gwanghwamun)</p><br>
+    <img class="picture" src="https://3aij0xs1tvo2l5now3runyvz-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/gwanghwamun_square_seoul_korea.jpg">
+    <p class="text-center2">광화문광장(光化門廣場)은 대한민국 서울특별시 종로구에 위치한 광장이다. <br><br>
+       범위는 광화문에서 세종로 사거리 및 청계광장에 이르며, 폭 34m, 길이 740m의 상시 광장에,<br>
+        평상시에는 차도이나 대규모 행사시에 광장으로 활용이 가능한 왕복 10차선 예비광장으로 구성되어 있다.<br><br></p>
+
+    <p class="text-center2">Gwanghwamun Square (Changhwamun Square) is a plaza located in Jongno-gu, Seoul, Korea.<br><br>
+      The range reaches Sejongno intersection and Cheonggye Plaza from Gwanghwamun, and it is 34m wide and 740m long.<br>
+      In normal times, it consists of a round-trip 10-lane preliminary plaza that can be used as a plaza in a driveway or large-scale event.<br><br></p>
+    <p class="text-center"><a href ="http://naver.me/FDQjZg9O" target='_blank'>광화문 가는 길</a> </p>  
+
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 광화문 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/54303_1528720802986009.jpg ">&nbsp;
+    <img class="picture2" src = " https://mp-seoul-image-production-s3.mangoplate.com/444358/116586_1622771617201_62098">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/59110_1619016981164211.jpg ">&nbsp;
+    <img class="picture2" src = " https://mp-seoul-image-production-s3.mangoplate.com/787041_1615533569508222.jpg">
+    <p class="food">
+      <a href =" " target='_blank'> 스시소라 </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 모던샤브하우스</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 후니도니</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 우육면관</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br><br>
+    
+    <div><p class="title-text2">청계천 (Cheonggyecheon)</p><br>
+    <img class="picture" src="http://newsroom.etomato.com/userfiles/%EC%B2%AD%EA%B3%84%EC%B2%9C_1.jpg">
+    <p class="text-center2"><br>청계천(淸溪川)은 대한민국 서울특별시 내부에 있는 지방하천으로, 한강 수계에 속하며 중랑천의 지류이다.<br>
+       최장 발원지는 종로구 청운동에 위치한 ‘백운동 계곡’이며,<br>
+        남으로 흐르다가 청계광장 부근의 지하에서 삼청동천을 합치며 몸집을 키운다. <br><br></p>
+    <p class="text-center2">Cheonggyecheon () is a local river located inside Seoul, Korea, which belongs to the Han River water system and is a tributary of Jungnangcheon.<br>
+      The longest origin is the Baekun-dong Valley located in Cheongun-dong, Jongno-gu,<br><br>
+      It flows south and grows in size by combining Samcheongdong Stream in the underground near Cheonggye Plaza.<br><br></p>
+    <p class="text-center"><a href ="http://naver.me/x50GMVgX" target='_blank'>청계천 가는 길</a> </p>  
+
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 청계천 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/313740_1620722371396477.jpg ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/40054/313740_1555974869659_58468352_328586967802856_852991756699396826_n.jpg ">&nbsp;
+    <img class="picture2" src = " https://mp-seoul-image-production-s3.mangoplate.com/396519/128148_1591901107619_16075">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/819262_1533093283850281.jpg ">
+    <p class="food">
+      <a href =" " target='_blank'> 우래옥</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 원조녹두 </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 우육면관 </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 포탈라</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br><br>
+
+    <div><p class="title-text2">낙산공원 (Naksan Park)</p><br>
+    <img class="picture" src="https://www.popco.net/zboard/data/dica_forum_nikon/2016/06/20/1839341552576783ef3d82a.jpg">
+    <p class="text-center2">
+      산 전체가 화강암으로 이루어진 돌산으로, 조선의 수도 한양의 내사산(內四山) 중 하나이다.<br><br>
+      2002년 6월 12일에 동숭동 산2-10 일대 152,443m2 면적이 낙산공원으로 조성되었다.<br>
+      산의 중턱까지 아파트가 들어서 있었으나 서울시의 녹지 확충 계획에 의해 낙산공원으로 탈바꿈한 것이다.<br><br></p>
+    <p class="text-center2">
+      It is a stone mountain with a whole mountain of granite, and is one of the inner mountains (mountain) of Hanyang, the capital of Joseon.<br><br>
+      On June 12, 2002, 152,443m2 area of ​​Dongsung-dong 2-10 was constructed as Naksan Park.<br>
+      The apartment was located in the middle of the mountain, but it was transformed into Naksan Park by the Seoul Metropolitan Government's plan to expand the green space.<br><br></p>
+    <p class="text-center"><a href ="http://naver.me/xM28Ofqc" target='_blank'>낙산공원 가는 길</a> </p>  
+
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 낙산공원 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = " https://mp-seoul-image-production-s3.mangoplate.com/358839/585002_1620567074033_53896">&nbsp;
+    <img class="picture2" src = " https://mp-seoul-image-production-s3.mangoplate.com/518855_1622639774162703.jpg">&nbsp;
+    <img class="picture2" src = " https://mp-seoul-image-production-s3.mangoplate.com/999105_1561794251944603.jpg">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/357642/259007_1621079470821_9842">
+    <p class="food">
+      <a href =" " target='_blank'> Osso파스타</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 핏제리아오</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 128pan</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 왕십리순대국 </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br><br>
+
+    <div><p class="title-text2">서울로7017 (Seoullo 7017)</p><br>
+    <img class="picture" src="https://img.khan.co.kr/news/2018/05/16/l_2018051601001934500152951.jpg">
+    <p class="text-center2">서울로 7017은 '1970년 만들어진 고가도로가 2017년 17개의 사람이 다니는 길로 다시 태어난다'는 뜻에서<br>
+       명명된 서울역고가도로의 도시 재생 공원화 사업명이다. <br><br>
+       서울시는 서울역고가를 공원화해 2017년 5월 20일에 개장하였고,<br>
+        인근 보행로와 고가를 잇는 구조물을 추가 설치해 최종적으로 총 17개의 보행로와 연결할 계획이다.<br><br></p>
+    <p class="text-center2">7017 in Seoul means that 'the highway built in 1970 is reborn as the way of 17 people in 2017'<br>
+      It is the name of the urban regeneration park project of the named Seoul Station Highway.<br><br>
+      The Seoul Metropolitan Government opened the Seoul Station High Street on May 20, 2017,<br>
+      A structure connecting the nearby walkway and the high price will be installed and finally connected to a total of 17 walkways.<br></p>
+    <p class="text-center"><a href ="http://naver.me/GozuPzDJ" target='_blank'>서울로7017 가는 길</a> </p>  
+
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 서울로7017 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/447614/1656652_1617238835091_24559 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/729747_1550330485319368.jpg ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/226355/1906669_1622373720326_65023 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/789735_1615893100172011.jpg ">
+    <p class="food">
+      <a href =" " target='_blank'>회현식당 </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 유즈라멘</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 연길반점</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 더레드하우스</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br><br>
+
+    <div><p class="title-text2">서울숲 (Seoul Forest)</p><br>
+    <img class="picture" src="https://blog.kakaocdn.net/dn/b7h94r/btqFRBeGFWJ/04GAVFuY9bxRN99b12K640/img.jpg">
+    <p class="text-center2">서울숲은 서울특별시 성동구 성수동 1가 685번지 일대에 있는 공원이다.<br><br>
+       면적은 1,156,498m2 (약 35만평)이며, 테마공원 5개로 구성되어 있다.<br>
+        한강과 중랑천이 공원 근처를 흐른다. 마포구 월드컵공원 (100만평)과 송파구 올림픽공원 (50만평)에 이어 서울에서 세 번째로 큰 공원이다.<br><br></p>
+    <p class="text-center2">Seoul Forest is a park located at 685 Seongsu-dong 1-ga, Seongdong-gu, Seoul.<br><br>
+      The area is 1,156,498m2 (about 350,000 pyeong), and consists of five theme parks.<br>
+      The Han River and Jungnangcheon stream flow near the park, the third largest park in Seoul after the Mapo-gu World Cup Park (1 million pyeong) and Songpa-gu Olympic Park (500,000 pyeong).<br><br></p>
+    <p class="text-center"><a href ="http://naver.me/xC6ir63v" target='_blank'>서울숲 가는 길</a> </p> 
+
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 서울숲 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/640361_1606741413342701.jpg ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/331354/555732_1533224838952_50391 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/313740_1585325376950071.jpg ">&nbsp;
+    <img class="picture2" src = " https://mp-seoul-image-production-s3.mangoplate.com/463989_1506304962616301.jpg">
+    <p class="food">
+      <a href =" " target='_blank'> 차만다</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 다로베</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 라멘오야지</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 하노이102</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br><br>
+
+    <div><p class="title-text2">뚝섬한강공원 (Ttukseom Hangang Park)</p><br><br>
+    <img class="picture" src="https://r1.community.samsung.com/t5/image/serverpage/image-id/2322193i4EFC98718A5DA821?v=1.0">
+    <p class="text-center2">뚝섬은 서울특별시 성동구 성수동 일대의 범람원으로, <br>
+      지대가 낮아 한강에 홍수가 날 때마다 물길이 생겨 섬처럼 보였기에 섬이라고 하였다. <br><br>
+      1980년대 초 한강종합개발사업에 의하여 한강을 직강화(直江化)하면서 남쪽의 많은 부분이 잘려 나갔고, <br>
+      제방을 쌓으면서 완전한 육지화가 이루어졌다.<br><br></p>
+    <p class="text-center2">Ttukseom is a floodplain in Seongsu-dong, Seongdong-gu, Seoul,<br>
+      It was called an island because it seemed like an island because of the low area and the waterways were created every time the Han River flooded.<br><br>
+      In the early 1980s, the Han River was directly strengthened by the Han River comprehensive development project, and many parts of the south were cut off.<br>
+      Full landfall was achieved as the embankment was built.<br></p>
+    <p class="text-center"><a href ="http://naver.me/FDQX1kYo" target='_blank'>뚝섬한강공원 가는 길</a> </p> 
+
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 뚝섬한강공원 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/957883_1622196691188347.jpg ">&nbsp;
+    <img class="picture2" src = " https://mp-seoul-image-production-s3.mangoplate.com/359190/980861_1589677216225_18661">&nbsp;
+    <img class="picture2" src = " https://mp-seoul-image-production-s3.mangoplate.com/586167_1524540417001290.jpg">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/390254/9239_1590398737972_26830 ">
+    <p class="food">
+      <a href =" " target='_blank'>팩피</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 누메르도스</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 청죽골식당</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 오레노카츠</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br><br>
+
+    <div><p class="title-text2">서울어린이대공원 (Children's Grand Park)</p><br>
+    <img class="picture" src="https://blog.kakaocdn.net/dn/dnIf8p/btqDQaZomlB/x1NekR7KELJtKKycy20VmK/img.jpg">
+    <p class="text-center2"><br>
+      푸른 숲과 파란 잔디의 녹지공간으로 이루어져 있어 어린이는 물론 청소년과 일반시민을 위한 휴식 및 문화공간으로서 <br>
+      시민공원의 역할을 한다. 또한 교양시설, 동물원, 식물원, 놀이시설 등을 갖춘 학습교육장으로 기능하고 있다.<br><br></p>
+    <p class="text-center2">
+      It is made up of green space of green forest and blue grass, and it is a rest and cultural space for children, youth and ordinary citizens<br>
+      It serves as a civic park. It also serves as a learning education center with cultural facilities, zoos, botanical gardens, and play facilities.<br><br></p>
+    <p class="text-center"><a href ="http://naver.me/FrKlwz7Y" target='_blank'>서울어린이대공원 가는 길</a> </p>  <br>
+
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 서울어린이대공원 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/628670_1581492327653944.jpg ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/564445_1620339996172951.jpg ">&nbsp;
+    <img class="picture2" src = " https://mp-seoul-image-production-s3.mangoplate.com/383255/387926_1622270637449_50011">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/1506/449685_1619039669211_35873 ">
+    <p class="food">
+      <a href =" " target='_blank'>이이요</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 소바쿠</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>텐동한</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 서변면옥</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br><br>
+
+    <div><p class="title-text2">여의도한강공원</p><br>
+    <img class="picture" src="https://cdn.crowdpic.net/detail-thumb/thumb_d_2920A7C7E5960CEB891E96142D9F3EFF.jpg">
+    <p class="text-center2"><br>한강공원(漢江公園) 은 한강을 옛날과 같이 깨끗한 강으로 되살리자는 목표로 만든 공원이다.<br>
+       1982년부터 1986년까지 만들어서, 한강의 서울지역 41.5km의 구간(하일동-개화동)이 평균 수심 2.5m, 강너비 1km의 강으로 변했다.<br><br></p>
+    <p class="text-center2">Han River Park () is a park aimed at reviving the Han River as a clean river as it once was.<br>
+      It was made from 1982 to 1986, and the section of 41.5 km in Seoul area of ​​the Han River (Hail-dong-Gaehwa-dong) changed to a river with an average depth of 2.5 meters and a river width of 1 km.<br><br></p>
+    <p class="text-center"><a href ="http://naver.me/I5FcmljL" target='_blank'>여의도한강공원 가는 길</a> </p>  <br><br>
+
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 여의도한강공원 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = " https://mp-seoul-image-production-s3.mangoplate.com/11072_1493178020157103.jpg">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/1587967_1591955961538889.jpg ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/added_restaurants/114662_1471826085743171.jpg ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/438944_1586929601172967.jpg ">
+    <p class="food">
+      <a href =" " target='_blank'> 피그인더가든</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>비엣남</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 영원식당</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 신원</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br><br>
+
+    <div><p class="title-text2">안양천 (Anyangcheon)</p><br>
+    <img class="picture" src="http://img.hani.co.kr/imgdb/resize/2020/1016/160273928751_20201016.JPG">
+    <p class="text-center2">
+       경기도 안양시는 이 하천의 이름을 따서 20세기 들어서 만들어진 지명이다. <br><br>
+       이 하천은 서울특별시 금천구와 경기도 광명시 사이의 경계를 흐르고, 서울특별시 영등포구와 양천구·강서구의 경계를 이룬다.<br><br></p>
+    <p class="text-center2">
+      Anyang City, Gyeonggi Province, is named after the river in the 20th century.<br><br>
+      This river flows through the boundary between Geumcheon-gu in Seoul and Gwangmyeong-si in Gyeonggi-do and forms the boundary between Yeongdeungpo-gu in Seoul and Yangcheon-gu and Gangseo-gu in Seoul.<br><br></p>
+    <p class="text-center"><a href ="http://naver.me/FzHSKZmM" target='_blank'>안양천 가는 길</a> </p>  <br>
+
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 안양천 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/17625/134693_14352864734881447 ">&nbsp;
+    <img class="picture2" src = " https://mp-seoul-image-production-s3.mangoplate.com/58989/458314_1475123270901_485">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/added_restaurant/312315_1443492747114179027 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/521155_1504693627457737.jpg ">
+    <p class="food">
+      <a href =" " target='_blank'>여신족발</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 춘천옥</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>단또</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 두껍삼</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br><br>
+
+    <div><p class="title-text2">보라매공원 (Boramae Park)</p><br>
+    <img class="picture" src="https://www.seouldanurim.net/comm/getImage?srvcId=MEDIA&parentSn=32816&fileTy=MEDIA&fileNo=1&thumbTy=L">
+    <p class="text-center2"><br>2003년부터 2008년까지 재정비계획에 따라 X-게임장, 조깅 트랙, 생태연못 및 음악분수,<br>
+       인조잔디축구장, 농사 체험장, 보라잔디광장, 에어파크 등이 조성되었다. <br><br>
+       </p>
+    <p class="text-center2">From 2003 to 2008, according to the reorganization plan, X-game grounds, jogging tracks, ecological ponds and music fountains,<br>
+      Artificial turf soccer field, farming experience field, Bora grass plaza, and air park were created.<br><br></p>
+    <p class="text-center"><a href ="http://naver.me/FBwDfgEH" target='_blank'>보라매공원 가는 길</a> </p>  <br><br><br>
+
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 보라매공원 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/419384/966238_1622854640162_29159 ">&nbsp;
+    <img class="picture2" src = " https://mp-seoul-image-production-s3.mangoplate.com/363605/592264_1617173649242_7755">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/1409461_1575013739654460.jpg ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/777663_1529450442331075.jpg ">
+    <p class="food">
+      <a href =" " target='_blank'>서평면옥</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 샤리스시</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 바이슨버거</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 하정식당</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br><br>
+
+    <div><p class="title-text2">올림픽공원 (Olympic Park)</p><br>
+    <img class="picture" src="https://post-phinf.pstatic.net/MjAyMDA0MjVfMTM5/MDAxNTg3NzUzNjUyMjM2.0GchbMpeZ7SYMa9viCLiAXUpRbdT6P3PQ4wvUcQEI24g.3Zh82aKdBLsR4nhWImvNBd0ceEopA-0UfjVLZ2KxHvMg.JPEG/DSC01479_%EC%88%98%EC%A0%95.jpg?type=w1200">
+    <p class="text-center2"><br>올림픽공원은 대한민국 서울특별시 송파구 올림픽로 424 (방이동 88-2)에 있는 공원이다. <br>
+      1988년 서울 올림픽을 위해 건설되었으며, 현재는 일반적인 종합 공원으로 이용되고 있다. <br><br>
+      사이클·역도·펜싱·수영·체조·테니스 등 6개의 경기장 등의 경기 시설과 소마미술관 등 다양한 문화 시설들이 함께 있다. <br></p>
+    <p class="text-center2">Olympic Park is a park located in 424 (88-2), Songpa-gu, Seoul, Korea.<br>
+      It was built for the 1988 Seoul Olympics and is now used as a general park.<br><br>
+      There are various cultural facilities such as cycling, weightlifting, fencing, swimming, gymnastics, tennis, and so on.<br><br></p>
+    <p class="text-center"><a href ="http://naver.me/5fnj3ZkO" target='_blank'>올림픽공원 가는 길</a> </p> 
+
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 올림픽공원 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/1757052_1612870943976630.jpg ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/403237/1260230_1599740580296_10969 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/347179/1067235_1620254692602_22454 ">&nbsp;
+    <img class="picture2" src = " https://mp-seoul-image-production-s3.mangoplate.com/878869_1620555445052795.jpg">
+    <p class="food">
+      <a href =" " target='_blank'>몽중헌</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 라미옥</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 토끼야</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>살롱드쥬</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br><br>
+
+    <div><p class="title-text2">반포한강공원 (Banpo Hangang Park)</p><br>
+    <img class="picture" src="https://t1.daumcdn.net/cfile/tistory/99D02B3359F524BF34">
+    <p class="text-center2"><br>반포한강공원(盤浦漢江公園)은 한강 르네상스 프로젝트의 첫 번째 결과물로,<br>
+       반포대교 인근에 설치된 공원이다. 잠수교와 세빛섬, 달빛무지개 분수, <br>
+       달빛광장과 서래섬, 마리나, 반포수상택시승강장, 피크닉장 등으로 이루어져 있다.<br><br></p>
+    <p class="text-center2">Banpo Han River Park () is the first result of the Han River Renaissance project,<br>
+      It is a park near Banpo Bridge. Diving bridge, three light islands, moonlight rainbow fountain,<br>
+      It consists of moonlight plaza, Seorae Island, marina, Banpo water taxi platform, picnic area.<br></p><br>
+    <p class="text-center"><a href ="http://naver.me/5TviyPmc" target='_blank'>반포한강공원 가는 길</a> </p> <br>
+
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 반포한강공원 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/1926878_1621324085023277.jpg ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/1402/29672_1460805185609_30777 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/356803/638412_1546000466477_14813 ">&nbsp;
+    <img class="picture2" src = " https://mp-seoul-image-production-s3.mangoplate.com/1762253_1620033701349934.jpg">
+    <p class="food">
+      <a href =" " target='_blank'> 타쿠미곤</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 마루심</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 더 마고 그릴</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 부엉이</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div><p class="title-text2">홍제천 (Hongjecheon)</p><br>
+    <img class="picture" src="https://live.staticflickr.com/7860/47554304622_308a0f9453_b.jpg">
+    <p class="text-center2">홍제천(弘濟川)은 북한산에서 발원하여 서울특별시 종로구·서대문구·마포구의 일부 <br>
+      또는 전지역을 포함해 흐르다가 한강의 하류로 흘러드는 지방하천이다. <br><br>
+      1974년 지방 2급 하천(현 지방하천)으로 지정되었고, 1983년과 1988년에 각각 하천 정비 기본계획을 수립해 <br>
+      1999년 2월 현재 18.94km에 달하는 유역의 하천 개수가 완료되었다. <br><br></p>
+    <p class="text-center2">Hongjecheon () originated from Bukhansan and is part of Jongno-gu, Seodaemun-gu, and Mapo-gu in Seoul<br>
+      Or it is a local river that flows down the Han River, including the whole area.<br><br>
+      It was designated as a second-class local river (now a local river) in 1974, and in 1983 and 1988, it established a basic plan for river maintenance, respectively.<br>
+      As of February 1999, the number of rivers in the watershed, which amounted to 18.94 km, was completed. <br></p>
+    <p class="text-center"><a href ="http://naver.me/xpPoe0Wa" target='_blank'>홍제천 가는 길</a> </p>  
+
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 홍제천 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/342188/1534322_1615629881255_7308 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/155352/677983_1495383651191_9675 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/232894/840737_1548195589600_289719 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/160916_1621419543673226.jpg ">
+    <p class="food">
+      <a href =" " target='_blank'>소소식탁</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 순대일번지</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 닭내장집</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 어라운드 그린</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br>
+  
+  <!--화면 하단 회색 줄-->
+  <hr width = "100%" color = "gray" size = "1"> <br><br>
+
+    <p class="text-center"> 
+    <a href="looking.html">볼거리가 좋아</a>&nbsp;&nbsp;
+    <a href="playing.html">노는게 좋아</a>&nbsp;&nbsp;
+    <a href="hiking.html">산이 좋아</a>&nbsp;&nbsp;
+    <a href="../Project1.html">메인으로 돌아가기</a>  &nbsp;&nbsp;&nbsp;&nbsp;
+    <!--화면을 맨 위로 가게해주는 버튼-->
+    <button onclick="uppage()">맨 위로 ↑</button>
+  
+    </p>
+    <br>
+    <!--화면 하단-->
+    <div class="last-block">
+      <p><br><br><br><br>
+        <h1 class="last-center">
+          <h2 class="text-center">Subscriptions</h2><br><br>
+            Subscribe<br><br>
+            Customer Service<br><br>
+            Renew Subscription<br><br>
+            Give a Gift<br><br>
+            Change Address<br><br><br><br><br><br>
+          
+          AD<br><br>
+          Our website, archdigest.com, offers constant original coverage of the<br>
+          interior design and architecture worlds, new shops and products, travel<br>
+          destinations, art and cultural events, celebrity style, and high-end real<br>
+          estate as well as access to print features and images from the AD archives.</h1>
+          <br><br><br><br><br><br>
+          <div>
+            <!--화면 하단 로그인 아이콘 창-->
+           <a href="https://www.kakaocorp.com/page/service/service/KakaoTalk"><img class="icon2" src=../icon/KakaoTalk.jpg height="30px"wdith="30px"></a>           
+           <a href="https://m.facebook.com/?locale2=ko_KR "><img class="icon2" src=../icon/Facebook.png height="30px"wdith="30px"></a>          
+           <a href="https://www.instagram.com/"><img class="icon2" src=../icon/Instagram.png height="30px"wdith="30px"></a>
+           <a href="https://www.youtube.com/"><img class="icon2" src=../icon/YouTube.png height="30px"wdith="30px"></a>
+           <a href="https://twitter.com/?lang=ko "><img class="icon2" src=../icon/Twitter.png height="30px"wdith="30px"></a>
+           <a href="https://www.tumblr.com/"><img class="icon2" src=../icon/Tumbler.png height="30px"wdith="30px"></a>
+           </div>
+           <br><br>
+        <hr width = "100%" color = "white" size = "1">
+        <br><br><br><br><br>
+        © 2021 Condé Nast. All rights reserved. Use of this site constitutes acceptance of our User Agreement and Privacy Policy and Cookie Statement and Your California Privacy Rights. Architectural Digest may earn a portion of sales <br>
+        from products that are purchased through our site as part of our Affiliate Partnerships with retailers. The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of Condé Nast. Ad Choices
+
+
+      <br><br><br><br></p>
+
+
+    </div>
+  </body>
+</html>

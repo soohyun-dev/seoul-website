@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> 노는게 좋아 </title>
+    <meta charset="utf-8">
+    <style>
+      /* 글씨 왼쪽*/
+      .title-text {
+        text-align: left;
+      }
+      /* 글씨 중앙, 글씨 크게*/
+      .title-text2 {
+        text-align: center;
+        font-size: 30px;
+      }
+      /* 글씨 중앙, 글씨 작게*/
+      .text-center {
+        text-align: center;
+        font-size: 20px;
+      }
+      /* 글씨 중앙*/
+      .text-center2 {
+        text-align: center;
+      }
+      /* 맛집 글꼴*/
+      .food {
+        text-align: right;
+        font-size: 15px;
+        margin-right: 150px;
+      }
+      /* 주요 사진*/
+      .picture {
+        width: 700px;
+        height: 550px;
+        float: left;
+      }
+      /* 화면 맨 아래창*/
+      .last-block {
+        background:#424242;
+        font-size: 10px;
+        color:white;
+        text-align: center;
+      }
+      /* 음식 사진*/
+      .picture2 {
+        width: 150px;
+        height: 150px;
+      }
+      /* 검색 아이콘*/
+      .icon {
+        float: right;
+        margin-right: 12px;
+      }
+      /* 화면 하단 로그인 아이콘 */
+      .icon2 {
+        float: center;
+        margin-right: 20px;
+      }
+  
+    </style>
+    
+    <script>
+      /* 창을 맨위로 올려주는 함수*/
+      function uppage(){
+        document.documentElement.scrollTop = 0;
+      }
+      /* 창을 맨아래로 내려주는 함수*/
+      function downpage(){
+        document.documentElement.scrollTop = document.documentElement.scrollHeight;
+      }
+      /* 검색창 출력창 함수 */
+      function serch() {
+        alert("검색되었습니다.");
+      }
+    </script>
+  </head>
+  <body>
+    <br>
+    <h1 class="text-center2"> 노는게 좋아 </h1><br><br><br>
+    <!--화면 왼쪽위 드롭다운 -->
+    <select onchange="window.location.href=this.value">
+      <optgroup label= "서울이 좋아"> 
+        <option>카테고리</option>
+        <option value="walking.html">● 산책이 좋아  </option> 
+        <option value="looking.html">● 볼거리가 좋아  </option>
+        <option value="playing.html">● 노는게 좋아  </option>
+        <option value="hiking.html">● 산이 좋아  </option>
+        <option value="../Project1.html">● 메인으로</option>
+      </optgroup>
+    </select>
+    <select>
+      <optgroup label= "언어">
+        <option> 한국 / 한국어  </option> 
+        <option>● USA / English  </option>
+        <option>● UK / English </option>
+        <option>● 日本 / 日本語 </option>
+        <option>● 中国 / 中文  </option>
+        <option>● Italia / Italiano  </option>
+        <option>● البحرين / العربية  </option>
+        <option>● France / Français  </option>
+        <option>● Danmark / Dansk  </option>
+      </optgroup>
+    </select>
+    <!--화면을 맨 아래로 가게해주는 버튼-->
+    <button onclick="downpage()">맨 아래로 ↓</button>
+    <!--검색창-->
+    <table class="icon">
+      <tr>
+        <td><a href=" " onclick="serch()"><img 20px, 20px src=../icon/Serch.png height="30px"wdith="30px"></a></td>
+        <td><input class="icon" id="username" type="text" name="username"></td>
+      </tr>
+  </table>
+    <hr width = "100%" color = "black" size = "1"> 
+
+    <div><p class="title-text2">홍대입구역 (Hongik University Station)</p><br>
+    <img class="picture" src="https://www.popco.net/zboard/data/com_freeboard/2017/06/30/1602e3ef1a12fb3d872185c3b222df9b.JPG">
+    <p class="text-center2">홍대(弘大)는 서울특별시 마포구 서울 지하철 2호선 홍대입구역과 <br>
+      홍익대학교 정문을 잇는 지역 및 이 일대에 있는 번화가를 말한다. <br><br>
+      '홍대'는 홍익대학교의 한국어 약칭으로 이 지역의 정식 지명이 아닌 통용 명칭이며, <br>
+      홍익대학교와 구분하기 위하여 홍대입구, 홍대거리라고도 부른다.<br><br></p>
+    <p class="text-center2">Hongdae is located in the Hongdae-dong area of ​​Seoul Subway Line 2 in Mapo-gu, Seoul<br>
+      It refers to the area connecting the main gate of Hongik University and the busy street in this area.<br><br>
+      'Hongdae' is abbreviated to the Korean language of Hongik University, which is not a formal name in this area but a common name,<br>
+      It is also called Hongik University entrance and Hongdae street to distinguish it from Hongik University.<br></p>
+    <p class="text-center"><a href ="http://naver.me/GMF9jZl9" target='_blank'>홍대입구역 가는 길</a> </p>  
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 홍대입구역 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://blog.kakaocdn.net/dn/biZmVa/btqDcyUe0D8/GOGKwIJxsDTJtBCPKDvyqK/img.jpg">&nbsp;
+    <img class="picture2" src = "https://i.pinimg.com/originals/10/a8/f7/10a8f7e6236079bf5ff0dd1e6460aaec.jpg">&nbsp;
+    <img class="picture2" src = "https://s3-ap-northeast-1.amazonaws.com/dcreviewsresized/20201223080846_photo1_09e689570282.jpg">&nbsp;
+    <img class="picture2" src = "https://s3-ap-northeast-1.amazonaws.com/dcreviewsresized/20210406052932_photo1_b69042a34009.jpg">
+
+    <p class="food">
+      <a href ="http://naver.me/GGhU8nFK" target='_blank'>광안리</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href ="https://m.place.naver.com/share?id=37521193&tabsPath=%2Fhome&appMode=detail" target='_blank'>닭꼬얌</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href ="https://m.place.naver.com/share?id=37438816&tabsPath=%2Fhome&appMode=detail" target='_blank'>박용석 스시</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href ="https://m.place.naver.com/share?id=38782401&tabsPath=%2Fhome&appMode=detail" target='_blank'>감성타코</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+   
+
+  </div><br><br><br><br><br><br><br><br><br><br>
+
+    <div><p class="title-text2">망원동 (Mangwon-dong)</p><br>
+    <img class="picture" src="https://post-phinf.pstatic.net/MjAxNzA3MTRfMTUy/MDAxNDk5OTkyNzI1MDE5.k7ZCYYA8_H5f5HFOxjeZDYLXb12B5mEkbLotGeHUPXgg.reFf2T5ewW8ihHkN3aTyV7q-RLOpifAdiwzEYhjnz4sg.JPEG/lg_m14999273095750_%E2%98%85_%EB%A7%9D%EB%A6%AC%EB%8B%A8%EA%B8%B8_%2866%29.jpg?type=w1200">
+    <p class="text-center2">망원동의 동명은 조선시대의 정자인 망원정(望遠亭)에서 유래한다.<br>
+       망원동은 한강을 이웃하고 있어 1990년대 초까지만 해도 서울의 상습 침수 지역 중 하나였다.<br>
+        이런 이유 때문에 개발도 상대적으로 덜 돼 망원동은 인근 합정동이나 상암동에 비해 노후 주택이 많은 편이다. <br>
+        2002년 월드컵이 개최된 월드컵경기장 인접지역이다.<br></p>
+    <p class="text-center2">The same name of the telephoto is derived from the telephoto (), a sperm of the Joseon Dynasty.<br>
+      The telephoto is adjacent to the Han River, and until the early 1990s, it was one of the flooded areas of Seoul.<br>
+      For this reason, the development is relatively less, and the mangwon-dong has more old houses than the nearby Hapjeong-dong and Sangam-dong.<br>
+      It is a region adjacent to the World Cup Stadium where the 2002 World Cup was held.<br><br></p>
+    <p class="text-center"><a href ="http://naver.me/GY2PNTwX" target='_blank'>망원동 가는 길</a> </p>  
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 망원동 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/462661_1614092294343929.jpg">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/1163874_1620825251150188.jpg">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/362831/748131_1621161007359_17947">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/626008_1613832359998712.jpg">
+    <p class="food">
+      <a href ="https://m.place.naver.com/share?id=1956949040&tabsPath=%2Fhome&appMode=detail " target='_blank'> 소금집델리</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href ="http://naver.me/xuICCz43 " target='_blank'> 블루쿠치나</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href ="http://naver.me/FeOCCIvN " target='_blank'> 마리오파스타</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href ="https://m.place.naver.com/share?id=31583220&tabsPath=%2Fhome&appMode=detail" target='_blank'> 망원즉석우동</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br><br>
+
+    <div><p class="title-text2">연남동 (Yeonnam-dong)</p><br>
+    <img class="picture" src="http://img.khan.co.kr/news/r/1100xX/2019/11/13/2019111201001366200107513.jpg">
+    <p class="text-center2"><br>연남동은 1975년 서울특별시의 자치구 경계 조정에 따라 새로 생긴 동으로 <br>
+      서대문구 연희동 일부(경의선 남서쪽 구역)를 분리하여 마포구에 편입시키면서 <br>
+      동명을 연희동의 남쪽이라 하여 '연남동'이라고 하게 되었다. <br><br></p>
+    <p class="text-center2">Yeonnam-dong is a new building in 1975 due to the adjustment of the boundary of the autonomous region of Seoul.<br>
+      a part (the southwestern section of the Gyeongui Line) of Yeonhui-dong, Seodaemun-gu is separated and it incorporates in Mapo-gu<br>
+      The same name was called 'Yeonnam-dong' as the south of Yeonhui-dong.<br><br></p>
+    <p class="text-center"><a href ="http://naver.me/xhHiXnfD" target='_blank'>연남동 가는 길</a> </p>  
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 연남동 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/334414/743008_1547003227261_41804 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/330456/1262394_1618579915579_6587 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/390558/1200355_1578823400361_6544 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/1967554_1621850293100492.jpg ">
+    <p class="food">
+      <a href =" " target='_blank'>포가</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>혼네</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>홈보이서울</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>연교</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br><br>
+
+    <div><p class="title-text2">명동거리 (Myeongdong Street)</p><br>
+    <img class="picture" src="https://www.lottehotel.com/content/dam/lotte-hotel/lotte/seoul/overview/e-concierge/shopping-performance/190320-4-768-ove-LTSE.jpg.thumb.768.768.jpg">
+    <p class="text-center2">명동은 대한민국 최대 번화가이자 서울의 다운타운으로, <br>
+      주한 중국 대사관, 명동성당, 가톨릭회관 건물을 제외한 거의 대부분이 쇼핑과 문화 등의 중심지이다. <br><br>
+      계절을 불문하고 다양한 국적의 관광객이 방문하는 서울의 명소이며, <br>
+      대한민국 도심 중 유동인구가 가장 많은 지역이기도 하다. <br><br></p>
+    <p class="text-center2">Myeong-dong is the largest downtown in Korea and downtown in Seoul,<br>
+      Most of the buildings except the Chinese Embassy in Korea, Myeongdong Cathedral, and Catholic Hall buildings are shopping and culture centers.<br><br>
+      It is a famous place in Seoul where tourists from various nationalities visit regardless of season,<br>
+      It is also the region with the largest floating population in the city center of Korea.<br></p>
+    <p class="text-center"><a href ="http://naver.me/F8KuNf61" target='_blank'> 명동거리 가는 길</a> </p>  
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 명동거리 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/380547/520946_1621488768775_25499 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/1842053_1617805492244953.jpg ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/185396/83687_1455105131499_4733 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/1009984_1615097307115257.jpg ">
+    <p class="food">
+      <a href =" " target='_blank'>멘텐</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>명동교자</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>라주칼면</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>명동돈까스</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <br><br><br><br><br><br><br>
+    <div><p class="title-text2">익선동(Ikseon-dong)</p><br>
+    <img class="picture" src="https://t1.daumcdn.net/cfile/tistory/99FBFB4A5F926D2C03">
+    <p class="text-center2"><br>익선동은 1920년대부터 지어진 한옥단지가 유명하며, <br>
+      서울특별시에서 가장 오래된 한옥 집단 지구 중 하나로 남아 있다. <br>
+      일제 강점기에는 판소리를 공연하는 여자 명창들을 비롯하여 많은 예술인이 살았고,<br>
+       해방 이후에는 다양한 계층의 사람들이 공존하였다. <br><br></p>
+    <p class="text-center2">Ikseon-dong is famous for its hanok complex, which was built in the 1920s,<br>
+      It remains one of the oldest Hanok collective districts in Seoul.<br>
+      During the Japanese colonial period, many artists lived, including female famous singers performing pansori,<br>
+      After liberation, people from various classes coexisted.<br><br></p>
+    <p class="text-center"><a href ="http://naver.me/xKQ7jucp" target='_blank'>익선동 가는 길</a> </p>  
+
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 익선동 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/40542/60267_1423757530292 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/411002/9239_1606052531783_40449 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/343315/570339_1617200173885_52237 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/231937/559397_1466335121797_36519 ">
+    <p class="food">
+      <a href =" " target='_blank'>오죽이네</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>온천집</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>농담</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>4.5평 우동집</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br><br>
+
+    <div><p class="title-text2">혜화 (Hyehwa)</p><br>
+    <img class="picture" src="https://t1.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/82j4/image/c4gKUbHDlv4tUZ3RDYKrLPzMyvQ.jpeg">
+    <p class="text-center2">혜화동(惠化洞)은 서울특별시 종로구의 법정동이자 행정동으로, <br>
+      행정동 혜화동은 법정동 혜화동, 명륜1가, 명륜2가, 명륜3가, 명륜4가를 관할한다.<br><br>
+       
+       동주민센터는 대한민국에서 최초로 한옥을 사용한다.<br><br></p>
+    <p class="text-center2">Hyehwa-dong () is a legal district and administrative district of Jongno-gu Seoul Metropolitan Government,<br>
+      Hyehwa-dong, administrative district, has jurisdiction over Hyehwa-dong, Myeongryun 1, Myeongryun 2, Myeongryun 3, and Myeongryun 4.<br><br>
+      The Dongjin Residents Center uses hanok for the first time in Korea.<br><br></p>
+    <p class="text-center"><a href ="http://naver.me/FJHfEix8" target='_blank'>혜화 가는 길</a> </p>  
+
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 혜화 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/360830/90579_1545209467325_2522 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/added_restaurants/317917_1443964424751.jpg ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/1744801_1620699423474710.jpg ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/589209_1547554600131983.jpg ">
+    <p class="food">
+      <a href =" " target='_blank'> 버거파크</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>깔리</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>혜화도담</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>정돈</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br><br>
+
+    <div><p class="title-text2">건대입구역 (Konkuk University Station)</p><br>
+    <img class="picture" src="http://www.bizhankook.com/old_data/bk/news/photo/2014/04/07/sanbada20140407141926_D_01_C_1.jpg">
+    <p class="text-center2"><br>건대입구역(建大入口驛)은 서울특별시 광진구 화양동에 있는 서울 지하철 2호선과 서울 지하철 7호선의 환승역이다.<br>
+       2호선 개통 당시의 역명은 화양역(華陽驛)이었으나 인근에 건국대학교가 있어 역명이 개정되었다.<br><br></p>
+    <p class="text-center2">The Gundae-dong area () is a transit station of Seoul Subway Line 2 and Seoul Subway Line 7 in Hwayang-dong, Gwangjin-gu, Seoul.<br>
+      The station name at the time of the opening of Line 2 was Hwayang Station (), but the station name was revised because Konkuk University was nearby.<br><br></p>
+    <p class="text-center"><a href ="http://naver.me/xIhDBg7g" target='_blank'>건대입구역 가는 길</a> </p>  <br>
+
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 건대입구역 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/195391_1430754354093 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/36361_1617006792299390.jpg ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/313740_1618725784958320.jpg ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/47875_1617943384677336.jpg ">
+    <p class="food">
+      <a href =" " target='_blank'>육성회비</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>다원식당</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>화양식당</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>초라멘</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br><br>
+
+
+    <div><p class="title-text2">롯데월드 (Lotte World)</p><br>
+    <img class="picture" src="https://mk0viptravelsxuj0b1k.kinstacdn.com/wp-content/uploads/2019/05/lotte-world-theme-park-castle.jpg">
+    <p class="text-center2">롯데월드(영어: Lotte World)는 대한민국 서울특별시 송파구 올림픽로 240에 위치한 테마파크다.<br>
+       롯데그룹의 계열사인 호텔롯데 운영월드 사업부에서 운영한다.<br><br>
+      놀이시설은 실내의 롯데월드 어드벤처(Lotte World Adventure)와 야외의 매직아일랜드가 운영되고 있으며,<br>
+       민속박물관, 아이스링크, 백화점, 마트, 호텔 등이 포함된다.<br><br></p>
+    <p class="text-center2">Lotte World (English: Lotte World) is a theme park located at 240 Olympic Road in Songpa-gu, Seoul, Korea.<br>
+      It is operated by the Lotte Operations World division, a subsidiary of Lotte Group.<br><br>
+      The amusement facilities are operated by Lotte World Adventure and Magic Island outdoors.<br>
+      Folk museums, ice rinks, department stores, marts and hotels are included.<br><br></p>
+    <p class="text-center"><a href ="http://naver.me/GcjWj39F" target='_blank'>롯데월드 가는 길</a> </p>  
+
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 롯데월드 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/576647_1531061897959288.jpg?fit=around|512:512&crop=512:512;*,*&output-format=jpg&output-quality=80 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/437434/810972_1611895062787_32771?fit=around|359:240&crop=359:240;*,*&output-format=jpg&output-quality=80 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/878869_1605565498789576.jpg ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/1104193_1617775820812047.jpg ">
+    <p class="food">
+      <a href =" " target='_blank'>바토스</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>팀호완</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 도림</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>을밀대</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br><br>
+
+    <div><p class="title-text2">종로포차거리 (JongnoPochaStreet)</p><br>
+    <img class="picture" src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F997CEE4B5B40A9AB36">
+    <p class="text-center2">종로3가역 근처에 위치한 종로 포차거리이다.<br>
+    요즘 거리에서 보기힘든 포차들이 모여있어서, 많은이들이 찾는 곳이다.<br>
+    포차들이 여기저기 열려있어 거리가 포차들로 형성되어있는게 특징이다. <br><br>
+    직장인들을 대상으로 운영하기때문에 다소 이른시간에 마감하는 분위기다. <br><br></p>
+    <p class="text-center2">It is Jongno Pocha Street located near Jongno 3-ga Station.<br>
+      There are hard-to-see tanks on the streets these days, so many people are looking for it.<br>
+      The tanks are open here and there, and the streets are formed with tanks.<br><br>
+      It is an atmosphere that closes in a somewhat early time because it operates for workers.<br><br></p>
+    <p class="text-center"><a href ="http://naver.me/GFpbiBD5" target='_blank'>종로포차거리 가는 길</a> </p>  
+
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 종로포차거리 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/880102_1615690924381579.jpg?fit=around|512:512&crop=512:512;*,*&output-format=jpg&output-quality=80">&nbsp;
+    <img class="picture2" src = " https://mp-seoul-image-production-s3.mangoplate.com/754881_1499424474112624.jpg">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/563638_1564314904190024.jpg ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/259501/34440_1474913865748_1974116 ">
+    <p class="food">
+      <a href =" " target='_blank'> 계림</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 종로돈까스</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'> 종로스시야</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>대륙</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br><br>
+
+
+    <div><p class="title-text2">서울랜드 (Seoul Land)</p><br>
+    <img class="picture" src="https://d2mgzmtdeipcjp.cloudfront.net/files/good_contents/2020/12/28/16091350454834.png">
+    <p class="text-center2">서울랜드(영어: Seoul Land는 경기도 과천시 막계동 서울대공원 내에 있는 테마공원이다. <br><br>
+      미국과 일본의 디즈니랜드처럼 ‘세계의 광장’ ‘삼천리동산’ ‘미래의 나라’ ‘모험의 나라’ ‘환상의 나라’ 등 <br>
+      5개의 테마구역으로 나누어 최첨단 대단위 주제공원으로 조성한 점이 특징이다.<br><br></p>
+    <p class="text-center2">Seoul Land (English: Seoul Land) is a theme park located in Seoul Grand Park in Makgye-dong, Gwacheon-si, Gyeonggi-do.<br><br>
+      Like Disneyland in the United States and Japan, 'The Square of the World', 'Samcheonri Garden', 'Future Country', 'Adventure Country', 'Fantasy Country'<br>
+      It is divided into five theme areas and is characterized by the fact that it is created as a state-of-the-art large-scale theme park.<br></p>
+    <p class="text-center"><a href ="http://naver.me/GrSqSow3" target='_blank'>서울랜드 가는 길</a> </p>  
+
+    <p class="title-text">&nbsp;&nbsp;&nbsp;● 서울랜드 맛집</p>&nbsp;&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/97204/37550_1456884151529_7977 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/12635/1066821_1604667996827_37881 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/330360/1116008_1542036620040_1958 ">&nbsp;
+    <img class="picture2" src = "https://mp-seoul-image-production-s3.mangoplate.com/390044/583794_1559483594404_28153 ">
+    <p class="food">
+      <a href =" " target='_blank'>봉덕칼국수</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>라운지디</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>마리아정 레시피</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href =" " target='_blank'>초당순두부</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  </div><br><br><br><br><br><br><br><br><br><br>
+  <!--화면 하단 회색 줄-->
+  <hr width = "100%" color = "black" size = "1"> <br><br>
+
+    <p class="text-center"> 
+    <a href="walking.html">산책이 좋아</a>&nbsp;&nbsp;
+    <a href="looking.html">볼거리가 좋아</a>&nbsp;&nbsp;
+    <a href="hiking.html">산이 좋아</a>&nbsp;&nbsp;
+
+    <a href="../Project1.html">메인으로 돌아가기</a> &nbsp;&nbsp;&nbsp;&nbsp;
+    <!--화면을 맨 위로 가게해주는 버튼-->
+    <button onclick="uppage()">맨 위로 ↑</button>
+    </p>
+    <br>
+    <!--화면 하단-->
+    <div class="last-block">
+      <p><br><br><br><br>
+        <h1 class="last-center">
+          <h2 class="text-center">Subscriptions</h2><br><br>
+            Subscribe<br><br>
+            Customer Service<br><br>
+            Renew Subscription<br><br>
+            Give a Gift<br><br>
+            Change Address<br><br><br><br><br><br>
+          
+          AD<br><br>
+          Our website, archdigest.com, offers constant original coverage of the<br>
+          interior design and architecture worlds, new shops and products, travel<br>
+          destinations, art and cultural events, celebrity style, and high-end real<br>
+          estate as well as access to print features and images from the AD archives.</h1>
+          <br><br><br><br><br><br>
+          <div>
+            <!--화면 하단 로그인 아이콘 창-->
+           <a href="https://www.kakaocorp.com/page/service/service/KakaoTalk"><img class="icon2" src=../icon/KakaoTalk.jpg height="30px"wdith="30px"></a>           
+           <a href="https://m.facebook.com/?locale2=ko_KR "><img class="icon2" src=../icon/Facebook.png height="30px"wdith="30px"></a>          
+           <a href="https://www.instagram.com/"><img class="icon2" src=../icon/Instagram.png height="30px"wdith="30px"></a>
+           <a href="https://www.youtube.com/"><img class="icon2" src=../icon/YouTube.png height="30px"wdith="30px"></a>
+           <a href="https://twitter.com/?lang=ko "><img class="icon2" src=../icon/Twitter.png height="30px"wdith="30px"></a>
+           <a href="https://www.tumblr.com/"><img class="icon2" src=../icon/Tumbler.png height="30px"wdith="30px"></a>
+           </div>
+           <br><br>
+        <hr width = "100%" color = "white" size = "1">
+        <br><br><br><br><br>
+        © 2021 Condé Nast. All rights reserved. Use of this site constitutes acceptance of our User Agreement and Privacy Policy and Cookie Statement and Your California Privacy Rights. Architectural Digest may earn a portion of sales <br>
+        from products that are purchased through our site as part of our Affiliate Partnerships with retailers. The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of Condé Nast. Ad Choices
+
+
+      <br><br><br><br></p>
+
+
+    </div>
+  </body>
+</html>
